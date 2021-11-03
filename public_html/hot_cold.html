@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Evolution</title>
+    <title>Hot and Cold Potato Routing</title>
     <style>
         .footer {
             position: relative;
@@ -69,7 +69,20 @@
 <!-- End of Navigation Bar -->
 
 
-
+<br/>
+<div class="container">
+    <h2>Hot and Cold Potato Routing</h2>
+    <br></br>
+    <h3>Hot Potato Routing</h3>
+    <img class="img-responsive" src="images/hot_cold.png" align="right" alt="Hot and Cold Potato" width="750" height="400">
+    <p>Hot Potato and Cold Potato are two practices of exchanging traffic between Peers. The difference in these two methods is in the approaches to how to carry traffic across the network.</p>
+    <p>The packet is bounced around like a hot potato sometimes moving further away from its destination because it has to keep moving through the network. This technique allows multiple packets to reach their destinations without being dropped. This is in contrast to store and forward routing where the network allows temporary storage at intermediate locations. Hot potato routing has applications in optical networks where messages made from light can not be stored in any medium.</p>
+    <p>This practice allows to decrease internal link utilization, as your peering partners are forced to carry packets across their network. Hot Potato mechanism can improve round trip latency, as your peer might have internal connectivity mesh. The main disadvantage of Hot Potato peering is the loss of control over traffic carried by your peer. You might have faster but less congested or more optimal paths compared to your partner, and customers could have benefited from your network carrying their packets.</p>
+    <h3>Cold Potato Routing</h3>
+    <img class="img-responsive" src="images/cold.png" align="right" alt="Hot and Cold Potato" width="750" height="400">
+    <p>Cold Potato technique is opposite to Hot Potato in this scenario, you carry customer’s traffic for as long as you can before delivering packets to the peer. Hot Potato is more commonly used. In fact, some public and private peering agreements will forbid you from manipulating route advertisements in order to using cold-potato traffic exchange practice. It is important to understand that asymmetric nature of the Internet allows you to use one scenario. Cold potato routing is used for the opposite situation – when the provider wants to carry the traffic inside its network for as long as possible, or bring the network as close to the actual recipient as possible.</p>
+    <br/><p>Cold potato generally is used for content delivery network, where the target is to manage the user experience. To achieve cold potato routing, R1 needs to know which exit point is topologically closest to the destination. The service providers prefer to keep traffic that are destined to paying customers within their network. For peering it can vary, sending site the traffic may pay , or can be related with the traffic volume or can be totally based on mutual benefit.</p>
+</div>
 
 
 
@@ -90,6 +103,7 @@
 <!-- Start of Footer -->
 <div class="footer">
     <p><small>&copy; Copyright 2021, Umang Gandhi, Sravya Myla, Tarun Puthineedi</small></p>
+    <img src="images/GitHub-icon.png"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> GitHub</a>
 </div>
 <!-- End of Footer -->
 
