@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Evolution</title>
+    <title>TCP/IP Routing</title>
     <style>
         .footer {
             position: relative;
@@ -70,6 +70,16 @@
 
 
 
+<div class="container">
+    <h2>TCP/IP Router Flow</h2>
+    <br></br>
+    <img class="img-responsive" src="images/tcp.png" align="right" alt="Tcp" width="750" height="400">
+    <p>A route defines a path for sending packets through the Internet network to an address on another network.</p>
+    <p>A route does not define the complete path, only the path segment from one host to a gateway that can forward packets to a destination (or from one gateway to another).</p>
+    <p>Routes are defined in the kernel routing table. The route definitions include information on networks reachable from the local host and on gateways that can be used to reach remote networks. When a gateway receives a datagram, it checks the routing tables to find out where next to send the datagram along the path to its destination.</p>
+    <p>You can add multiple routes for the same destination in the kernel routing table. A routing lookup evaluates all routes that match the request then chooses the route with the lowest distance metric. If multiple matching routes have equal distance, a lookup chooses the most specific route. If both criteria are equal for multiple routes, routing lookups alternate choices of matching routes.</p>
+</div>
+
 
 
 
@@ -90,6 +100,7 @@
 <!-- Start of Footer -->
 <div class="footer">
     <p><small>&copy; Copyright 2021, Umang Gandhi, Sravya Myla, Tarun Puthineedi</small></p>
+    <img src="images/GitHub-icon.png"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> GitHub</a>
 </div>
 <!-- End of Footer -->
 
