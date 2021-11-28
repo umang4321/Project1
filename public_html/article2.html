@@ -5,8 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>ICANN</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Terminologies</title>
     <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: Helvetica, sans-serif;
+        }
         .footer {
             position: relative;
             left: 0;
@@ -39,8 +44,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="inventors.html">Inventors</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="icann.html">ICANN <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="icann.html">ICANN</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="types.html">Types</a>
@@ -49,8 +54,9 @@
                 <a class="nav-link" href="contributors.html">Contributors</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="terminologies.html">Terminologies</a>
+                <a class="nav-link" href="terminologies.html">Terminologies <span class="sr-only">(current)</span></a>
             </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Techniques
@@ -63,7 +69,7 @@
                     <a class="dropdown-item" href="http_fun.html">HTTP Request Flow</a>
                 </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     PythonArticles
                 </a>
@@ -78,16 +84,26 @@
     </div>
 </nav>
 <!-- End of Navigation Bar -->
-
-<div class="container">
-    <h2>Internet Corporation for Assigned Names and Numbers(ICANN)</h2>
-    <br></br>
-    <img class="img-responsive" src="images/icann.jpeg" align="right" alt="ICANN" width="650" height="400">
-    <p>The history of ICANN traces back to the creation and the evolution of the Internet itself.</p>
-    <p>In 1969, the first message was sent via the Arpanet, a U.S. Department of Defense network and precursor to the global Internet. Three years later, Jon Postel started to record socket numbers for the Arpanet in his notebook. His registry eventually became the Internet Assigned Numbers Authority (IANA), which manages the coordination of the Domain Name System (DNS).</p>
-    <p>ICANN was founded in 1998 and grew out of a U.S. Government commitment to transfer the policy and technical management of the DNS to a non-profit corporation based in the U.S. with global participation. ICANN was incorporated in California on September 30, with entrepreneur and philanthropist Esther Dyson as founding chairwoman. It is a nonprofit public benefit corporation "organized under the California Nonprofit Public Benefit Corporation Law for charitable and public purposes. The IANA Stewardship Transition was completed in October 2016 thanks to the work and dedication of the Internet community worldwide.å ICANN was established in California due to the presence of Jon Postel, who was a founder of ICANN and was set to be its first Chief Technology Officer prior to his unexpected death. ICANN formerly operated from the same Marina Del Rey building where Postel formerly worked, which is home to an office of the Information Sciences Institute at the University of Southern California.</p>
-
+<div class="container-fluid">
+<h2>Why Testing is Important?</h2>
+<p>A test is a procedure that exercises a behavior to determine if the behavior functions correctly.<br/>
+    Testing provides an empirical feedback loop for development. That’s how testing keeps us safe. With tests, we know when things break. Without tests, coding can be dangerous. We don’t want to deploy big ol’ bugs!<br/>
+    Goal of python unit testing is to detect as many bugs and inconsistencies in the infancy of the application development as possible. This is achieved by designing and scripting accurate and quality unit tests that can also serve as detailed documentation for the development process. This ensures that bugs and other problems we catch in the first stages of the development, can be fixed by the development team.
+    So, if we intend to spend time writing tests, how can we write good tests? There’s a simple but powerful pattern I like to follow: Arrange-Act-Assert.
+</p>
+    <h2>What is AAA testing?</h2>
+    <p>Arrange/Act/Assert (AAA) is a pattern for arranging and formatting code in Unit Test methods.</p>
+    <p>It is a best practice to author your tests in more natural and convenient way. The idea is to develop a unit test by following these 3 simple steps:<p>
+    <p><b>Arrange:</b> This is the first step of a unit test application. Here we will arrange the test, in other words we will do the necessary setup of the test. For example, to perform the test we need to create an object of the targeted class, if necessary, then we need to create mock objects and other variable initialization, something like this.
+</p>
+    <p><b>Act:</b> This is the middle step of a unit step application. In this step we will execute the test. In other words, we will do the actual unit testing and the result will be obtained from the test application. Basically, we will call the targeted function in this step using the object that we created in the previous step.
+    </p>
+    <p><b>Assert:</b> This is the last step of a unit test application. In this step we will check and verify the returned result with expected results.
+    </p>
 </div>
+
+
+
 
 
 
@@ -96,7 +112,7 @@
 <!-- Start of Footer -->
 <div class="footer">
     <p><small>&copy; Copyright 2021, Umang Gandhi, Sravya Myla, Tarun Puthineedi</small></p>
-    <img src="images/GitHub-icon.png"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> GitHub</a>
+    <img src="images/GitHub-icon.png" alt="Github"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> GitHub</a>
 </div>
 <!-- End of Footer -->
 
