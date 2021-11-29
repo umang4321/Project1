@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>OOP Principles</title>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: Helvetica, sans-serif;
+        }
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            line-height: 2.5;
+        }
+    </style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="images/logo.png" alt="Girl in a jacket" width="90" height="90"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="evolution.html">Evolution</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inventors.html">Inventors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icann.html">ICANN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="types.html">Types</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contributors.html">Contributors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="terminologies.html">Terminologies <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Techniques
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="hot_cold.html">Hot/Cold Potato Routing</a>
+                    <a class="dropdown-item" href="tcp_ip.html">TCP/IP Routing</a>
+                    <a class="dropdown-item" href="ssl_tls.html">SSL and TLS</a>
+                    <a class="dropdown-item" href="death.html">Death Rule</a>
+                    <a class="dropdown-item" href="http_fun.html">HTTP Request Flow</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PythonArticles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="article1.html">Pylint</a>
+                    <a class="dropdown-item" href="article2.html">AAA Testing</a>
+                    <a class="dropdown-item" href="article3.html">OOP Principles</a>
+                    <a class="dropdown-item" href="article4.html">S.O.L.I.D</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End of Navigation Bar -->
+<div class="container-fluid">
+    <!-- Start of Encapsulation -->
+    <h2><b>Encapsulation</b></h2>
+    <p>Encapsulation is one of the fundamental concepts in object-oriented programming (OOP) that describes the idea of wrapping data and the methods that work on data within one unit. This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data. To prevent accidental change, an object’s variable can only be changed by an object’s method.
+    <br/></p>
+    <p>We've shown that private class data can only be manipulated via class functions, not objects, in the Fig.1.</p>
+
+    <div class="text-center">
+        <img class="img-responsive" src="images/encapsulation.png" alt="Act" width="850" height="275">
+        <p>Fig. 1</p>
+    </div>
+    <h4><b>Real life example</b></h4>
+    <p>The common example of encapsulation is Capsule. In capsule all medicine are encapsulated in side capsule as shown in Fig.2</p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/en1.png" alt="Act" width="700" height="275">
+        <p>Fig. 2</p>
+    </div>
+    <p><b>Automatic Cola Vending Machine :</b>Suppose you go to an automatic cola vending machine as shown in Fig. 3 and request for a cola. The machine processes your request and gives the cola.</p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/en2.png" alt="Act" width="300" height="350">
+        <p>Fig. 3</p>
+    </div>
+    <p>Here automatic cola vending machine is a class. It contains both data i.e. Cola can and operations i.e. service mechanism and they are wrapped/integrated under a single unit Cola Vending Machine. This is called Encapsulation.<br/>
+
+        <b>A Washing Machine and It's Power Button:</b> What is the function that power button does? Switches the machine on (obviously). But did u ever imagined the inside mechanism. Doesn't matter unless it's functioning well. That's encapsulation. The object is wrapped and inner details are hidden. Only thing is that object can be called and used. User friendly!
+        You can't access private date outside the class.
+    </p>
+    <h4><b>Benefits of Encapsulation in Python</b></h4>
+    <p>Encapsulation not only ensures better data flow but also protects the data from outside sources. The concept of encapsulation makes the code self-sufficient. It is very helpful in the implementation level, as it prioritizes the ‘how’ type questions, leaving behind the complexities. You should hide the data in the unit to make encapsulation easy and also to secure the data.</p>
+
+    <h4><b>What is the need for Encapsulation in Python</b></h4>
+    <p>The following reasons show why developers find the Encapsulation handy and why the Object-Oriented concept is outclassing many programming languages.</p>
+    <ul>
+        <li>Encapsulation helps in achieving the well-defined interaction in every application.</li>
+        <li>The Object-Oriented concept focuses on the reusability of code in Python. (DRY – Don’t Repeat Yourself).</li>
+        <li>The applications can be securely maintained.</li>
+        <li>It ensures the flexibility of the code through a proper code organization.</li>
+        <li>It promotes a smooth experience for the users without exposing any back-end complexities.</li>
+        <li>It improves the readability of the code. Any changes in one part of the code will not disturb another.</li>
+        <li>Encapsulation ensures data protection and avoids the access of data accidentally. The protected data can be accessed with the methods discussed above.</li>
+    </ul>
+    <p>Encapsulation in Python is, the data is hidden outside the object definition. It enables developers to develop user-friendly experience. This is also helpful in securing data from breaches, as the code is highly secured and cannot be accessed by outside sources.</p>
+    <!-- End of Encapsulation -->
+
+    <!-- Start of Inheritance -->
+
+
+    <!-- End of Inheritance -->
+
+
+
+
+
+
+
+</div>
+
+<!-- Start of Footer -->
+<div class="footer">
+    <p><small>&copy; Copyright 2021, Umang Gandhi</small></p>
+    <img src="images/GitHub-icon.png" alt="Github"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> GitHub</a>
+</div>
+<!-- End of Footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
