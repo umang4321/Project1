@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>AAA Testing</title>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: Helvetica, sans-serif;
+        }
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            line-height: 2.5;
+        }
+    </style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="images/logo.png" alt="Girl in a jacket" width="90" height="90"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="evolution.html">Evolution</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inventors.html">Inventors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icann.html">ICANN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="types.html">Types</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contributors.html">Contributors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="terminologies.html">Terminologies <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Techniques
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="hot_cold.html">Hot/Cold Potato Routing</a>
+                    <a class="dropdown-item" href="tcp_ip.html">TCP/IP Routing</a>
+                    <a class="dropdown-item" href="ssl_tls.html">SSL and TLS</a>
+                    <a class="dropdown-item" href="death.html">Death Rule</a>
+                    <a class="dropdown-item" href="http_fun.html">HTTP Request Flow</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PythonArticles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="article1.html">Pylint</a>
+                    <a class="dropdown-item" href="article2.html">AAA Testing</a>
+                    <a class="dropdown-item" href="article3.html">OOP Principles</a>
+                    <a class="dropdown-item" href="article4.html">S.O.L.I.D</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End of Navigation Bar -->
+<div class="container-fluid">
+    <h1><b>S.O.L.I.D Principles</b></h1>
+    <p>SOLID is a mnemonic acronym for a set of design principles developed for object-oriented programming languages. The SOLID principles are designed to encourage software engineers to write code that is simpler, more resilient, and updatable.
+        To grasp SOLID principles, you must have a thorough understanding of how the interface is used.</p>
+    <p>SOLID is the acronym for a collection of 5 object-oriented design principles, first conceptualised by Robert C. Martin about 20 years ago, and they have shaped the way we write software today.</p>
+    <p>They are intended to assist in the creation of code that is simpler, more easily readable, maintainable, and extendable. When a huge group of people is working on codebases that are constantly growing and evolving, with hundreds of thousands (if not millions) of lines of code, this becomes critical. The principles serve as a road map for adhering to best practices and producing higher-quality code.</p>
+    <p>The letters stand for:</p>
+    <ol>
+        <li>Single Responsibility Principle</li>
+        <li>Open/Closed Principle</li>
+        <li>Liskov Substitution Principle</li>
+        <li>Interface Segregation Principle</li>
+        <li>Dependency Inversion Principle</li>
+    </ol>
+    <div class="text-center">
+        <img class="img-responsive" src="images/solid.jpeg" alt="Solid" width="850" height="200">
+        <p>Fig 1</p>
+    </div>
+    <h2><b>Single Responsibility Principle</b></h2>
+    <p>‘S’ in SOLID stands for single responsibility. The error of many novice programmers is to write complex functions and classes that do a lot of things. However, according to the Single Responsibility Principle, a module, a class or a function has to only do one thing. In other words, they have to have only one responsibility. This way the code is more robust, easier to debug, read and reuse.</p>
+    <p>Single Responsibility Principle (or SRP for short), states that:</p>
+    <p><i>A class should have one and only one reason to change, meaning that a class should have only one job.</i></p>
+    <p>So what are we gaining restructuring the code this way?</p>
+<ul>
+    <li>The functions are easily reusable and can be mixed depending on the task, thus making the code easily extendable. For example, if we wanted to calculate the frequency of a word in a text that is contained in a AWS S3 bucket instead of a local file, we just need to write a new function read_s3, the rest of the code would work without modification.</li>
+    <li>The code is DRY. No code is repeated, so if we need to make a modification in one of the functions, we would only need to do it in one place.</li>
+    <li>The code is clean, organized and very easy to read and understand.</li>
+    <li>We can write tests for each function separately, so it is easier to debug the code.</li>
+</ul>
+    <div class="text-center">
+        <img class="img-responsive" src="images/single.png" alt="Single" width="850" height="300">
+        <p>Fig 2</p>
+    </div>
+    <p>In Fig 2 the SubtractNumber() class has only single function to subtract numbers which states the Single Responsibility Principle.</p>
+    <h2><b>Open/Closed Principle</b></h2>
+    <p>The "Open for Extensions" means that we need to develop our code to add functionalities when new requirements are created, and "Closed for Modifications" means that we already developed our code, that went through testing and validations, this could only be altered in case a bug has been found.</p>
+    <p>Open-Closed Principle (or OCP for short) states:</p>
+    <p><i>Objects or entities should be open for extension but closed for modification.</i></p>
+    <p>Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+        This means that I should be able to add new functionality without changing my existing code structure, but by adding new code instead. The goal is to change existing, tested code as little as possible to prevent bugs and having to test everything all over again. If this principle is not followed, the result could be a long list of changes in depending classes, regression on existing features, and unnecessary hours of testing.</p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/open.png" alt="Single" width="850" height="300">
+        <p>Fig 3</p>
+        <img class="img-responsive" src="images/close.png" alt="Single" width="850" height="300">
+        <p>Fig 4</p>
+    </div>
+    <p>Fig. 3 has the function add_number() which is the function of Calculator. Later, I have added subtract_number() function which does not affects the add_number() function. This shows the open-close Principle in Python.</p>
+    <h2><b>Liskov Substitution Principle</b></h2>
+    <p>Liskov substitution principle (LSP) is a particular definition of a subtyping relation, called (strong) behavioral subtyping.</p>
+    <p>Created by created by Barbara Liskov and Jeannette Wing, the Liskov Substitution Principle or (LSP for short) states that:</p>
+    <p><i>You should be able to use any derived class instead of a parent class and have it behave in the same manner without modification</i></p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/L.jpeg" alt="Single" width="850" height="300">
+        <p>Fig 5</p>
+    </div>
+    <p>This principle is by Barbara Liskov, who formulated her principle very formally:<br/>
+        “Let φ(x) be a property provable about objects x of type T. Then φ(y) should be true for objects y of type S where S is a subtype of T.”<br/>
+        This means that if we have a base class T and subclass S, you should be able to substitute the main class T with the subclass S without breaking the code. The interface of a subclass should be the same as the interface of the base class, and the subclass should behave in the same way as the base class.<br/>
+        If you have a method in T that is being overridden in S, then both methods should take the same inputs, and return the same type of output. The subclass can return only a subset of the return values of the base class, but it should accept all the inputs the base class does.
+    </p>
+
+    <h2><b>Interface Segregation Principle</b></h2>
+    <p>The Interface Segregation Principle (ISP) states:</p>
+    <p><i>A client should not implement interfaces that are not necessary for the application.</i></p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/isp.jpg" alt="Single" width="850" height="300">
+        <p>Fig 6</p>
+    </div>
+    <p>If your base class has a lot of methods, it's possible that only a few of your subclasses will use them. However, because of inheritance, you'll be able to invoke these methods on any subclass, even ones that don't require them. This means there are a lot of interfaces that aren't used, aren't needed, and will cause problems if they're unintentionally called.
+        Something rule is intended to keep this from happening. We should design interfaces as short as feasible to avoid having to implement functions that aren't required. Instead of a single large base class, we should break them up into several smaller ones. They should just have methods that are relevant to each, and our subclasses should inherit from them.</p>
+    <h2><b>Dependency Inversion Principle</b></h2>
+    <p>Dependency Inversion Principle (DIP for short) states:</p>
+    <p><i>One should depend upon abstractions and their concrete implementation.</i></p>
+    <p>In object-oriented design, the dependency inversion principle is a specific form of loosely coupling software modules. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are reversed, thus rendering high-level modules independent of the low-level module implementation details.</p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/last.png" alt="Single" width="850" height="200">
+        <p>Fig 7</p>
+        <img class="img-responsive" src="images/getlast.png" alt="Single" width="850" height="200">
+        <p>Fig 8</p>
+    </div>
+    <p>Fig. 7 shows subtract_number() function which uses get_last_calculation() function to get the previous calculation which shows the Dependency Inversion Principle.</p>
+</div>
+
+<!-- Start of Footer -->
+<div class="footer">
+    <p><small>&copy; Copyright 2021, Umang Gandhi</small></p>
+    <img src="images/GitHub-icon.png" alt="Github"><a href="https://github.com/umang4321/Project2/tree/article-4" style="color: rgb(15, 15, 14)"> GitHub</a>
+    <img src="images/w3c.jpg" alt="W3C" width="50" height="50"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> W3C Validator</a>
+</div>
+<!-- End of Footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

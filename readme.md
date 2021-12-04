@@ -1,4 +1,4 @@
-#Project 1- History of Internet
+#Project 2- Python Articles
 
 
-[History of Internet](http://project1ug5sravya.eastus.azurecontainer.io/index.html)
+[History of Internet with Python Articles](http://project1ug5sravya.eastus.azurecontainer.io/index.html)

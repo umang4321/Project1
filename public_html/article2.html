@@ -122,24 +122,34 @@
         <img class="img-responsive" src="images/a2assert2.png" alt="Act" width="850" height="300">
         <p>Fig 4</p>
     </div>
+    <h2>Use of External Data for Testing:</h2>
+    <p>Unit tests for Python classes and functions are executed using the Python unit test library. Because it is a Python built-in library, you do not need to install any third-party libraries to use it.</p>
+    <p>Pandas is a flexible and powerful Python library for working with labeled and time series data. You can successfully work with files using functions like Pandas read_csv(). They can be used to store data and labels from Pandas objects to a file and then load them as Pandas Series or DataFrame instances later.</p>
+    <p>This output illustrates that all test cases design are covered in the called function, if any of the test cases or method is not used, then it will result in reducing coverage for the same.</p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/csv.png" alt="CSV" width="850" height="300">
+        <p>Fig 5</p>
+    </div>
+    <p>Steps for running external data csv for testing:</p>
+    <ul>
+        <li>Installing Pandas -- pip install pandas</li>
+        <li>Preparing the csv data -- Creating the csv file for loading in the python project</li>
+        <li>Using the Pandas read_csv() and .to_csv() Function -- A comma-separated values (CSV) file is a plaintext file with a .csv extension that holds tabular data. This is a widely used file format for storing big amounts of data. A single table row is represented by each row of the CSV file. The values in the same row are separated by commas by default, but you can change it to a semicolon, tab, space, or any other character.</li>
+        <li>Reading the csv files -- Pandas functions for reading the contents of files are named using the pattern .read_[file-type](), where [file-type] indicates the type of the file to read.</li>
+        <li>Writing the csv files -- Once you have those packages installed, you can save your DataFrame in an Excel file with .to_excel().</li>
+        <li>In this way, we can use the pandas library from loading the data and labels from Pandas DataFrame objects to different kinds of files. The function read_csv() and .to_csv() allows us to load our data in the single function or method call.</li>
+    </ul>
 
-
-    <h2>Conclusion</h2>
+        <h2>Conclusion</h2>
     <p>In this tutorial, we showed how the AAA pattern may help us arrange our tests in such a way that we can effectively distinguish between each step, from test setup through results verification. Because anyone can look at the test code and discover what behavior has been verified and why it has worked, including this technique into our process provides improved readability and easier maintenance.</p>
 </div>
-
-
-
-
-
-
 
 
 <!-- Start of Footer -->
 <div class="footer">
     <p><small>&copy; Copyright 2021, Umang Gandhi</small></p>
-    <img src="images/GitHub-icon.png" alt="Github"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> GitHub</a>
-    <img src="images/w3c.jpg" width="50" height="50"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> W3C Validator</a>
+    <img src="images/GitHub-icon.png" alt="Github"><a href="https://github.com/umang4321/Project2/tree/article-2" style="color: rgb(15, 15, 14)"> GitHub</a>
+    <img src="images/w3c.jpg" alt="W3C" width="50" height="50"><a href="https://github.com/umang4321/Project1" style="color: rgb(15, 15, 14)"> W3C Validator</a>
 </div>
 <!-- End of Footer -->
 
